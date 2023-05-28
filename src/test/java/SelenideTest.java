@@ -16,7 +16,7 @@ public class SelenideTest {
 
     @Test
     public void orderFormTest() {
-        open("http://localhost:7777");
+        open("http://localhost:9999");
         $("[data-test-id='city'] input").setValue("Челябинск");
         String currentDate = generateData(7);
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
